@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="欧美线货代行情与跨境物流干货资料库">
+  <title>货代每日资讯</title>
+  <style>
+    :root{--ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--paper:#fff;--bg:#f5f6f8;--brand:#2457a6;--soft:#edf3fb}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    .wrap{width:min(960px,calc(100% - 32px));margin:auto}header{background:var(--paper);border-bottom:1px solid var(--line)}
+    .header-inner{padding:26px 0 20px;display:flex;justify-content:space-between;align-items:end;gap:16px}
+    h1{font-size:25px;line-height:1.3;margin:0 0 5px}h2{font-size:19px;margin:0}h3{font-size:16px;margin:0 0 8px}.sub{color:var(--muted);margin:0}.date{color:var(--muted);font-size:13px;white-space:nowrap}
+    nav{display:flex;gap:24px;padding:12px 0 0}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--brand)}
+    main{padding:24px 0 48px}.section{margin-bottom:28px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:12px}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:12px}
+    .status{display:inline-block;background:var(--soft);color:var(--brand);border-radius:4px;padding:2px 8px;font-size:12px;margin-bottom:12px}
+    .empty{color:var(--muted);margin:8px 0 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.scope{background:#fafafa;border:1px solid var(--line);border-radius:6px;padding:10px;text-align:center;color:#4b5563;font-size:13px}
+    .search{width:100%;padding:11px 13px;border:1px solid #d1d5db;border-radius:6px;background:white;font:inherit;outline:none}.search:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(36,87,166,.08)}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.filter{border:1px solid var(--line);background:white;border-radius:20px;padding:4px 12px;cursor:pointer;color:var(--muted);font:inherit;font-size:13px}.filter.active{background:var(--brand);border-color:var(--brand);color:white}
+    details{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin-bottom:10px;overflow:hidden}summary{cursor:pointer;padding:15px 18px;list-style:none;display:flex;align-items:center;gap:12px}summary::-webkit-details-marker{display:none}summary:hover{background:#fafafa}.tag{font-size:12px;color:var(--brand);background:var(--soft);border-radius:4px;padding:1px 7px;white-space:nowrap}.title{font-weight:600;flex:1}.day{font-size:12px;color:var(--muted);white-space:nowrap}.content{padding:0 18px 18px;border-top:1px solid var(--line)}.content p{margin:12px 0 6px}.content ol,.content ul{padding-left:22px;margin:6px 0}.content li{margin:5px 0}.tip{background:#fff8e8;border-left:3px solid #d99a26;padding:10px 12px;margin-top:12px;color:#694f1b}.count{color:var(--muted);font-size:13px}footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 28px}.hidden{display:none}
+    @media(max-width:640px){.wrap{width:min(100% - 22px,960px)}.header-inner{align-items:start;flex-direction:column;padding-top:20px}.grid{grid-template-columns:repeat(2,1fr)}.card{padding:16px}summary{padding:13px;gap:8px;flex-wrap:wrap}.title{min-width:65%}.day{width:100%;padding-left:0}.content{padding:0 14px 15px}h1{font-size:22px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap header-inner">
+    <div><h1>货代每日资讯</h1><p class="sub">欧美线行情 · 跨境物流干货 · 历史资料归档</p></div>
+    <div class="date">更新日期：2026-10-28</div>
+  </div>
+  <nav class="wrap"><a href="#market">每日行情</a><a href="#archive">干货资料库</a></nav>
+</header>
+<main class="wrap">
+  <section id="market" class="section">
+    <div class="section-head"><h2>每日行情</h2><span class="count">工作日 14:00 更新</span></div>
+    <article class="card">
+      <span class="status">首期报告待更新</span>
+      <h3>欧美线货代行情报告</h3>
+      <p class="empty">第一期计划于 2026-10-29 14:00 生成。正式更新前不展示未经核实的价格。</p>
+      <div class="grid"><div class="scope">欧洲线<br>空运 · 海运 · 卡航 · 铁路</div><div class="scope">英国线<br>空运 · 海运 · 卡航 · 铁路</div><div class="scope">美国线<br>空运 · 海运 · 尾端派送</div><div class="scope">报告要点<br>运价 · 舱位 · 风险 · 建议</div></div>
+    </article>
+  </section>
+
+  <section id="archive" class="section">
+    <div class="section-head"><h2>干货资料库</h2><span id="count" class="count"></span></div>
+    <input id="search" class="search" type="search" placeholder="搜索标题或内容，例如：清关、海运、FBA" aria-label="搜索干货">
+    <div class="filters" aria-label="分类筛选">
+      <button class="filter active" data-cat="全部">全部</button><button class="filter" data-cat="FBA">FBA</button><button class="filter" data-cat="运输">运输</button><button class="filter" data-cat="运营">运营</button><button class="filter" data-cat="风控">风控</button>
+    </div>
+    <div id="articles">
+      <details class="article" data-cat="FBA 运输" open>
+        <summary><span class="tag">FBA</span><span class="title">#301 FBA 头程渠道选型</span><span class="day">2026-10-28</span></summary>
+        <div class="content"><p>不要只比较每公斤单价，应结合补货紧急程度、产品属性和断货成本选择渠道。</p><ol><li><strong>海卡：</strong>海运后卡车送仓，适合货量大、能整托派送且补货周期充足的货物；要考虑预约入仓时间。</li><li><strong>海派：</strong>海运后转 UPS、FedEx 等快递，操作灵活、免预约送仓；注意超长、超重附加费。</li><li><strong>空派：</strong>适合急补货、高货值或季节性商品；询价时确认燃油、旺季及偏远附加费。</li><li><strong>国际快递：</strong>适合样品和极急小批量货，通常不是大货长期补货的经济方案。</li><li><strong>组合补货：</strong>大部分库存走海运控制成本，少量走空运防止断货。</li></ol><div class="tip"><strong>常见坑：</strong>只比较头程运价，漏算末端附加费、预约等待、查验延误和断货损失。</div></div>
+      </details>
+      <details class="article" data-cat="风控 运营">
+        <summary><span class="tag">风控</span><span class="title">#300 如何选择靠谱货代</span><span class="day">2026-10-27</span></summary>
+        <div class="content"><p>靠谱不等于报价最低，而是渠道透明、异常处理能力稳定、责任边界清楚。</p><ol><li>核实营业主体、联系方式和实际办公情况，合同主体与收款主体应一致。</li><li>要求报价写清计费重、税费、附加费、时效口径和赔偿规则。</li><li>询问延误、查验、扣关、丢件后的联系人、反馈频率和处理流程。</li><li>首次合作先用小批量试单，核对轨迹、账单与承诺是否一致。</li></ol><div class="tip"><strong>常见坑：</strong>只凭微信群里的低价广告发货，出现货损后才发现没有合同、保险或明确赔付依据。</div></div>
+      </details>
+      <details class="article" data-cat="运营 风控">
+        <summary><span class="tag">运营</span><span class="title">#299 物流跟踪与异常处理 SOP</span><span class="day">2026-10-26</span></summary>
+        <div class="content"><p>异常处理的关键是尽早发现、固定责任人和保留证据，而不是等客户催促。</p><ol><li>按揽收、起运、到港、清关、提柜、派送、签收设置节点检查。</li><li>轨迹超过正常更新周期仍无变化时，立即向承运商发起查询并记录工单号。</li><li>保存运单、箱单、发票、交接记录、照片和沟通记录，便于索赔。</li><li>给客户同步时说明已知事实、正在采取的动作和下一次反馈时间，不做无依据承诺。</li></ol><div class="tip"><strong>常见坑：</strong>只有“正在核实”四个字，没有反馈时点，容易让小延误演变为信任问题。</div></div>
+      </details>
+      <details class="article" data-cat="风控">
+        <summary><span class="tag">风控</span><span class="title">#298 汇率与账期风控</span><span class="day">2026-10-25</span></summary>
+        <div class="content"><p>货代利润容易被汇率波动和应收账款侵蚀，报价时应同时管理价格与回款。</p><ol><li>外币成本对应人民币报价时，明确采用的汇率基准和报价有效期。</li><li>汇率波动较大的阶段缩短报价有效期，必要时设置合理的汇率调整条款。</li><li>按客户设置信用额度与账期，逾期后暂停新增赊销，避免风险持续累积。</li><li>定期核对应收账款账龄，区分未到期、逾期和争议款项。</li></ol><div class="tip"><strong>常见坑：</strong>只盯销售额和毛利，不看实际回款，账面盈利但现金流持续紧张。</div></div>
+      </details>
+      <details class="article" data-cat="FBA 运营">
+        <summary><span class="tag">FBA</span><span class="title">#297 退件与换标操作</span><span class="day">2026-10-24</span></summary>
+        <div class="content"><p>退件换标前先做数量、状态和成本评估，避免把不可售库存再次送回仓库。</p><ol><li>取得移除订单明细，核对 SKU、FNSKU、数量和退件原因。</li><li>海外仓收货后清点并拍照，区分可换标、需维修和应报废的货物。</li><li>新标签须覆盖旧标签且保持可扫描，外箱与内品标签不要混用。</li><li>重新创建货件前，核算移除费、仓租、操作费、二次头程和预期销售收入。</li></ol><div class="tip"><strong>常见坑：</strong>未核对商品与 FNSKU 对应关系就批量换标，可能造成错标和再次不可售。</div></div>
+      </details>
+      <details class="article" data-cat="FBA 运营">
+        <summary><span class="tag">FBA</span><span class="title">#296 库存绩效与库容管理</span><span class="day">2026-10-23</span></summary>
+        <div class="content"><p>补货不是越多越好，需要兼顾可售天数、在途库存、滞销风险和仓储成本。</p><ol><li>用现有库存、在途数量和近期销量估算可售天数，再倒推补货时间。</li><li>定期处理不可售和长期滞销库存，减少无效库容占用。</li><li>旺季预留运输延误缓冲，但避免一次性压入过多慢动销库存。</li><li>以后台最新政策、容量监视器和账户通知为准，不沿用过时阈值。</li></ol><div class="tip"><strong>常见坑：</strong>只按过去几天销量线性外推旺季需求，忽视活动结束后的销量回落。</div></div>
+      </details>
+      <details class="article" data-cat="FBA 运营">
+        <summary><span class="tag">FBA</span><span class="title">#295 FBA 分仓与合仓策略</span><span class="day">2026-10-22</span></summary>
+        <div class="content"><p>分仓和合仓应比较总物流成本与操作成本，不能只看仓库数量。</p><ol><li>分仓可能增加票数和不同仓库间的操作协调，但有时更贴近库存配置目标。</li><li>合仓便于集中出货，但需结合后台可选服务、费用和最新仓库安排评估。</li><li>按各仓实际件数、重量和尺寸制作箱唛与申报资料，避免一仓资料套全票。</li><li>出货前比较头程、尾程、贴标、操作和可能产生的额外服务费用。</li></ol><div class="tip"><strong>常见坑：</strong>为减少仓库数量盲目合仓，最终综合费用反而更高。</div></div>
+      </details>
+    </div>
+    <p id="noResult" class="card empty hidden">没有找到相关内容，请换一个关键词或分类。</p>
+  </section>
+</main>
+<footer>货代每日资讯 · 简洁阅读版<br>行情数据以每期报告标明的来源和发布时间为准</footer>
+<script>
+const input=document.getElementById('search'),buttons=[...document.querySelectorAll('.filter')],articles=[...document.querySelectorAll('.article')],count=document.getElementById('count'),empty=document.getElementById('noResult');let category='全部';
+function apply(){const q=input.value.trim().toLowerCase();let visible=0;articles.forEach(a=>{const okCat=category==='全部'||a.dataset.cat.includes(category),okText=!q||a.textContent.toLowerCase().includes(q);a.classList.toggle('hidden',!(okCat&&okText));if(okCat&&okText)visible++});count.textContent='共 '+visible+' 篇';empty.classList.toggle('hidden',visible!==0)}
+input.addEventListener('input',apply);buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');category=b.dataset.cat;apply()}));apply();
+</script>
+</body>
+</html>
