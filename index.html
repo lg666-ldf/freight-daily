@@ -26,7 +26,7 @@
 <header>
   <div class="wrap header-inner">
     <div><h1>货代每日资讯</h1><p class="sub">欧美线行情 · 跨境物流干货 · 历史资料归档</p></div>
-    <div class="date">更新日期：2026-10-29（补更新）</div>
+    <div class="date">更新日期：2026-10-30</div>
   </div>
   <nav class="wrap"><a href="#market">每日行情</a><a href="#archive">干货资料库</a></nav>
 </header>
@@ -56,7 +56,11 @@
       <button class="filter active" data-cat="全部">全部</button><button class="filter" data-cat="FBA">FBA</button><button class="filter" data-cat="运输">运输</button><button class="filter" data-cat="运营">运营</button><button class="filter" data-cat="风控">风控</button>
     </div>
     <div id="articles">
-      <details class="article" data-cat="运输" open>
+      <details class="article" data-cat="FBA 运营" open>
+        <summary><span class="tag">FBA</span><span class="title">#303 FBA 预约入仓与送达时段管理</span><span class="day">2026-10-30</span></summary>
+        <div class="content"><p>卡派送仓不是货到就能卸货，货件必须持有有效的预约（Appointment）和送达时段（Delivery Window）；亚马逊按这个时段判断是否迟到，而不是按你在后台填的预计到达日。</p><ol><li><strong>先分清谁来约：</strong>亚马逊合作承运人由亚马逊分配时段；自选/自有卡车的 LTL、FTL 需先在 Seller Central 填写承运人信息，再由承运人在亚马逊预约系统（Carrier Central）取得预约号并回填，预约号必须与货件号一一对应。</li><li><strong>提前量比想象的大：</strong>旺季热门仓库的可用时段常排在 3—7 天后，部分大件仓更久；改约、取消通常要在时段开始前 24 小时操作，逾期可能产生取消费或空驶费。托拍、整车必须预约，快递包裹走免预约通道。</li><li><strong>FIST 与 ShipTrack 要留证据：</strong>承运人须按 FIST 以 API 回传车辆位置，卖家才能在 ShipTrack 看到实时进度、ETA 和送达时段变化；未接入 FIST 的货件轨迹缺失，一旦被判迟到很难拿出有效申诉材料。</li><li><strong>DW 会自己变：</strong>送达时段随路况、提柜和仓库作业滚动刷新，司机排班和卸货安排应以发货前最后一次刷新为准，不要锁死建单时的原始窗口。</li><li><strong>迟到怎么救：</strong>在后台「入库问题」提交迟到复核时，同时附上 POD、签收扫描、预约截图和 ShipTrack 轨迹，证据齐全的案件通过率明显高于只填表单。</li></ol><div class="tip"><strong>常见坑：</strong>司机到了仓库却没有有效预约或预约号填错，被直接拒收；除了空驶费和二次派送费，货件还会留下迟到/拒收记录，拉低入仓缺陷率并影响后续时段分配。</div></div>
+      </details>
+      <details class="article" data-cat="运输">
         <summary><span class="tag">运输</span><span class="title">#302 海运整柜 vs 拼箱的计费与适用场景</span><span class="day">2026-10-29</span></summary>
         <div class="content"><p>整柜（FCL）按箱核算，拼箱（LCL）按货物的计费体积或重量核算；选择时应比较全程费用，而不是只比海运费。</p><ol><li><strong>整柜：</strong>适合货量较大、需要独立装柜或希望减少混货操作的货物。即使未装满，也要承担整箱及提还箱等相关费用，因此要看装载利用率。</li><li><strong>拼箱：</strong>适合小批量货物，通常按 CBM 或重量吨取大计费，并注意最低计费标准。</li><li><strong>费用差异：</strong>拼箱除海运费外，常涉及起运港拼箱费、目的港拆箱费、分拨及文件操作费；低海运费不代表总成本低。</li><li><strong>时效差异：</strong>拼箱需要集货、装拼和到港拆箱分拨，可能增加等待环节；整柜流程相对直接，但仍受船期和港口拥堵影响。</li><li><strong>货物管理：</strong>易碎、高货值或不适合混装的货物，应综合评估独立装柜的价值。</li></ol><div class="tip"><strong>常见坑：</strong>只按“每立方米多少钱”比较，忽略最低收费和目的港拆箱费，到港后账单明显超预算。</div></div>
       </details>
